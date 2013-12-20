@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/mViewFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="aaaaaaaaaaaaaaa" android:layout_toLeftOf="@id/mMpointView" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.lcstyle.client.view.MpointView android:id="@id/mMpointView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mViewFlipper" />
+</RelativeLayout>

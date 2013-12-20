@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="8.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rl_l" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+        <com.lcstyle.client.view.AsynLoadImageView2 android:id="@id/iv_pic1" android:background="@drawable/img_bg" android:padding="0.5dip" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/soft_lsit_icon_default" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:paddingBottom="15.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_pic1">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="裤子" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$500" android:layout_below="@id/tv_name1" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/tv_price1">
+                <View android:background="@color/line_color" android:layout_width="30.0dip" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/iv_heart1" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_heart1" android:background="@drawable/yellowheart2" android:layout_width="31.5dip" android:layout_height="28.0dip" android:layout_marginTop="13.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_sum1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="+654" android:layout_toRightOf="@id/iv_heart1" />
+                <View android:id="@id/tv_line2" android:background="@color/line_color" android:layout_width="30.0dip" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/iv_heart1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_r" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+        <com.lcstyle.client.view.AsynLoadImageView2 android:id="@id/iv_pic2" android:background="@drawable/img_bg" android:padding="0.5dip" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/soft_lsit_icon_default" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:paddingBottom="15.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_pic2">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="aaaaaaaaaaa" android:singleLine="true" android:layout_below="@id/iv_pic2" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_price2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$5500" android:layout_below="@id/tv_name2" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/tv_price2">
+                <View android:background="@color/line_color" android:layout_width="30.0dip" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/iv_heart2" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_heart2" android:background="@drawable/yellowheart2" android:layout_width="31.5dip" android:layout_height="28.0dip" android:layout_marginTop="13.0dip" android:layout_centerInParent="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_normal" android:id="@id/tv_sum2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="+654" android:layout_toRightOf="@id/iv_heart2" />
+                <View android:id="@id/tv_line1" android:background="@color/line_color" android:layout_width="30.0dip" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/iv_heart2" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:newname="lcstyle.com">
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="相关专题" />
+    <com.lcstyle.client.view.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" newname:style="1" />
+</LinearLayout>

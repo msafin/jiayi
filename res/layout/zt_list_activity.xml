@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.lcstyle.client.view.ListViewRefresh android:id="@id/mListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="#ffffffff" android:dividerHeight="0.30000007dip" android:layout_weight="2.0" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_loading" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textColor="@color/text_normal" android:gravity="center" android:id="@id/bt_load" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="加载中..." />
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/pg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/ll_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/head" />
+    </LinearLayout>
+</LinearLayout>

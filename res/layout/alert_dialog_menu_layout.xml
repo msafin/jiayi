@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/tv_corner_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="8.0dip">
+        <ListView android:layout_gravity="center" android:id="@id/content_list" android:padding="3.0dip" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#ffffffff" android:scrollingCache="false" android:cacheColorHint="#ffffffff" android:divider="#ffe4e4e4" android:dividerHeight="0.30000007dip" />
+    </LinearLayout>
+</LinearLayout>

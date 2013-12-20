@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+    <RelativeLayout
+	    android:background="#333333" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+	    
+	    <ImageView android:id="@+id/logo" 
+	        android:background="@drawable/lc_log" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="53dp" />
+	    
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/poster_pager"
+	        android:layout_width="match_parent"
+	        android:layout_height="120dp"
+	        android:layout_below="@+id/logo"
+	        android:background="#FFFFFF">
+	    </android.support.v4.view.ViewPager>
+	    
+	    <!-- 新品 -->
+	    <LinearLayout 
+	        android:id="@+id/news"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="120dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_below="@+id/poster_pager">
+	        <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2"
+	            android:background="#FFFFFF">
+	            <TextView 
+	                android:id="@+id/new_product"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:text="新品"/>
+	        </RelativeLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical"
+	            android:layout_marginLeft="2dp"
+	            android:layout_weight="1">
+	            <TextView 
+		            android:id="@+id/top_ten"
+		           	android:layout_width="match_parent"
+		           	android:layout_height="0dp"
+		           	android:layout_weight="1"
+		           	android:gravity="center"
+		           	android:text="Top10"
+		           	android:background="#FFFFFF"/>"
+	         	<TextView 
+		            android:id="@+id/selected"
+		           	android:layout_width="match_parent"
+		           	android:layout_height="0dp"
+		           	android:layout_weight="1"
+		           	android:layout_marginTop="2dp"
+		           	android:gravity="center"
+		           	android:text="现货精选"
+		           	android:background="#FFFFFF"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- 品牌 -->
+	     <LinearLayout 
+	        android:id="@+id/brand"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="120dp"
+	      	android:layout_marginTop="2dp"
+	        android:layout_below="@+id/news">
+	        <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="2"
+	            android:background="#FFFFFF">
+	            <TextView 
+	                android:id="@+id/brand_purchasing"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:text="品牌代购"/>
+	        </RelativeLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical"
+	            android:layout_marginLeft="2dp"
+	            android:layout_weight="1">
+	         	<TextView 
+		            android:id="@+id/brand_new"
+		           	android:layout_width="match_parent"
+		           	android:layout_height="match_parent"
+		           	android:gravity="center"
+		           	android:text="品牌新品"
+		           	android:background="#FFFFFF"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/misc"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="48dp"
+	      	android:layout_marginTop="2dp"
+	        android:layout_below="@+id/brand">
+	        <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:layout_weight="2">
+	            <TextView 
+		            android:id="@+id/lottery"
+		           	android:layout_width="0dp"
+		           	android:layout_height="match_parent"
+		           	android:layout_weight="1"
+		           	android:gravity="center"
+		           	android:text="摇摇抽奖"
+		           	android:background="#FFFFFF"/>
+	         	<TextView 
+		            android:id="@+id/favorites"
+		           	android:layout_width="0dp"
+		           	android:layout_height="match_parent"
+		           	android:layout_marginLeft="2dp"
+		           	android:layout_weight="1"
+		           	android:gravity="center"
+		           	android:text="收藏夹"
+		           	android:background="#FFFFFF"/>
+	        </LinearLayout>
+	        
+	         <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="2dp"
+	            android:background="#FFFFFF">
+	            <TextView 
+	                android:id="@+id/share"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:text="分享得金币"/>
+	        </RelativeLayout>
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+</ScrollView>
